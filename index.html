@@ -83,32 +83,27 @@
     <h1>Soal Essay</h1>
     <form id="essayForm">
       <label for="essay1"
-        >Soal 1: Jelaskan latar belakang dan dampak dari Tiga Tuntutan Rakyat
-        (Tritura) pada masa transisi menuju Orde Baru.</label
+        >Soal 1: Sebutkan dan jelaskan tiga contoh cabang iman (syu’abul iman) yang harus diwujudkan dalam kehidupan sehari-hari seorang Muslim!</label
       ><br />
       <textarea id="essay1" name="essay1" required></textarea><br />
 
       <label for="essay2"
-        >Soal 2: Apa itu Supersemar dan bagaimana pengaruhnya terhadap perubahan
-        kepemimpinan di Indonesia?</label
+        >Soal 2: Berikan contoh konkret bagaimana seorang Muslim dapat menjalani hidup penuh manfaat dengan menghindari perilaku berfoya-foya, riya’, sum’ah, takabbur, dan hasad!</label
       ><br />
       <textarea id="essay2" name="essay2" required></textarea><br />
 
       <label for="essay3"
-        >Soal 3: Bagaimana situasi politik dan ekonomi Indonesia sebelum dan
-        sesudah keluarnya Tritura?</label
+        >Soal 3: Apa saja langkah-langkah yang dapat diambil untuk menghindari sifat riya’, sum’ah, takabbur, dan hasad dalam kehidupan sehari-hari?</label
       ><br />
       <textarea id="essay3" name="essay3" required></textarea><br />
 
       <label for="essay4"
-        >Soal 4: Apa peran Arif Rachman Hakim dalam peristiwa Tritura dan
-        dampaknya?</label
+        >Soal 4: Bagaimana prinsip dasar asuransi syariah berbeda dari asuransi konvensional?</label
       ><br />
       <textarea id="essay4" name="essay4" required></textarea><br />
 
       <label for="essay5"
-        >Soal 5: Mengapa Tritura dianggap sebagai salah satu titik penting dalam
-        sejarah Indonesia?</label
+        >Soal 5: Mengapa koperasi syariah penting untuk kesejahteraan ekonomi umat?</label
       ><br />
       <textarea id="essay5" name="essay5" required></textarea><br />
 
@@ -136,52 +131,38 @@
 
           // Evaluasi setiap jawaban
           var score1 = evaluateEssay(essay1Text, [
-            "Tritura",
-            "inflasi tinggi",
-            "bubarkan PKI",
-            "pembersihan kabinet",
-            "harga",
-            "ekonomi",
-            "bentrokan",
-            "militer",
-            "Presiden Sukarno",
+            "kejujuran",
+            "amanah",
+            "menjaga kebersihan",
           ]);
           var score2 = evaluateEssay(essay2Text, [
-            "Supersemar",
-            "Surat Perintah Sebelas Maret",
-            "Letnan Jenderal Soeharto",
-            "keamanan",
-            "peralihan kekuasaan",
-            "Presiden Sukarno",
+            "hidup sederhana",
+            "ibadah dengan ikhlas",
+            "rendah hati",
+            "menghindari iri hati",
           ]);
           var score3 = evaluateEssay(essay3Text, [
-            "politik",
-            "ekonomi",
-            "inflasi 600%",
-            "Orde Baru",
-            "stabilitas politik",
-            "pemulihan ekonomi",
+            "memperbaiki niat",
+            "muhasabah",
+            "bersikap tawadhu",
+            "bersyukur",
+            "memperbanyak ibadah",
+            "menghindari perbandingan sosial",
           ]);
           var score4 = evaluateEssay(essay4Text, [
-            "Arif Rachman Hakim",
-            "mahasiswa",
-            "bentrokan",
-            "militer",
-            "demonstrasi",
-            "Tritura",
-            "simbol perlawanan",
-            "pembubaran KAMI",
-            "Presiden Sukarno",
+            "gotong royong",
+            "saling membantu",
+            "menghindari unsur riba (bunga)",
+            "gharar (ketidakpastian)",
+            "judi",
           ]);
           var score5 = evaluateEssay(essay5Text, [
-            "Tritura",
-            "ketidakpuasan rakyat",
-            "pemerintah Sukarno",
-            "katalisator perubahan",
-            "Orde Baru",
-            "Soeharto",
-            "stabilitas",
-            "pembangunan ekonomi",
+            "layanan simpan pinjam",
+            "pembiayaan usaha",
+            "prinsip keadilan",
+            "transparansi",
+            "kebersamaan",
+            "sesuai dengan syariah",
           ]);
 
           // Hitung total skor
@@ -205,7 +186,7 @@
 
           var emailBody = "Total Skor: " + totalScore;
           var mailtoLink =
-            "mailto:deqaann@gmail.com?subject=Hasil Evaluasi&body=" + emailBody;
+            "mailto:salfadiani1109@gmaill.com?subject=Hasil Evaluasi&body=" + emailBody;
 
           window.location.href = mailtoLink;
         });
